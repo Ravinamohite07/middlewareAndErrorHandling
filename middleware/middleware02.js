@@ -12,12 +12,12 @@ app.use("/user",(req,res,next) => {
     console.log("Handling the route user 2nd..!!");
     res.send("This is the 2nd route handler...!");
 }
-)
+);
 
 
 app.listen(3000,() => {
-    console.log("Server running on port 3000..!")
-})
+    console.log("Server running on port 3000..!");
+});
 // GET: http://localhost:3000/user => This is the 1st route handler..!
 //Handling the route user 1st..!! >>   IN CONSOLE
 //Handling the route user 2nd..!! >> IN CONSOLE
