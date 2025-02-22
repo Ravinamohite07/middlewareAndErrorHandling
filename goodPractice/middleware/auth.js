@@ -9,6 +9,18 @@
     }
 };
 
+const userAuth = (req,res,next) => {
+    console.log("user auth getting check..!");
+    const token = "xyz"
+    const isAdminAuthorizd = token === "xyz";
+    if(!isAdminAuthorizd){
+        res.send("user is not authorized...!");
+    }else{
+        next();
+    }
+
+}
+
 module.exports ={
-    adminAuth,
+    adminAuth,userAuth
 }
